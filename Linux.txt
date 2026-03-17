@@ -1,0 +1,145 @@
+Section 1 
+
+1️⃣ pwd
+Purpose: Show current directory path
+
+2️⃣ ls
+Purpose: List files and folders
+
+3️⃣ cd
+Purpose: Change directory
+
+4️⃣ mkdir
+Purpose: Create new directory
+
+5️⃣ rm -rf
+Purpose: Delete files/folders forcefully (recursive)
+⚠️ Dangerous: deletes permanently (no recovery)
+
+6️⃣ ps -ef
+Purpose: Show all running processes
+
+7️⃣ top
+Purpose: Real-time system monitoring (CPU, memory, processes)
+
+8️⃣ df -h
+Purpose: Show disk space in human-readable format
+
+9️⃣ history
+Purpose: Show previously used commands
+
+🔟 uptime
+Purpose: Show system running time and load
+
+
+Section 2
+
+Create a directory called project-files
+→ mkdir project-files
+
+Navigate into the project-files directory
+→ cd project-files
+
+Create a file called notes.txt using vi
+→ vi notes.txt
+
+Display the contents of notes.txt
+→ cat notes.txt
+
+Copy notes.txt to backup.txt
+→ cp notes.txt backup.txt
+
+Show the first 100 lines of logs.txt
+→ head -100 logs.txt
+
+Show the last 100 lines of logs.txt
+→ tail -100 logs.txt
+
+Check disk storage usage of the server
+→ df -h
+
+Check running processes in the system
+→ ps -ef
+
+Delete a file called temp.txt
+→ rm temp.txt
+
+
+Section 3
+
+1️⃣ Difference between > and >>
+
+> → Overwrites file content
+
+>> → Appends content to file
+
+Example:
+echo "Hi" > file.txt → replaces content
+echo "Hi" >> file.txt → adds to existing content
+
+2️⃣ Purpose of kill -9
+
+Forcefully terminates a process
+
+Cannot be ignored by the process
+
+Example:
+kill -9 1234
+
+⚠️ Use only if normal kill doesn’t work
+
+3️⃣ Difference between rm and rmdir
+
+rm → deletes files and non-empty directories
+
+rmdir → deletes only empty directories
+
+Example:
+rm file.txt
+rmdir folder
+
+4️⃣ Purpose of netstat -tulpn
+
+Shows:
+
+Open ports
+
+Listening services
+
+Process IDs (PID)
+
+Protocols (TCP/UDP)
+
+Used for checking which service is running on which port
+
+5️⃣ Purpose of ping
+
+Checks network connectivity between systems
+
+Measures response time
+
+Example:
+ping google.com
+
+
+Section 4
+
+1️⃣ Check current working directory
+→ pwd
+
+2️⃣ Create a directory called devops inside home directory
+→ mkdir ~/devops
+
+3️⃣ Check which process is using high CPU
+→ top
+
+(Alternative: htop if installed)
+
+4️⃣ Check server connectivity to google.com
+→ ping google.com
+
+5️⃣ View last 50 lines of application.log
+→ tail -50 application.log
+
+
+
